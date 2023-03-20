@@ -4,8 +4,6 @@ services:
   app:
     build: .
     volumes:
-      - type: bind
-        source: ./
-        target: /home/
+      - ./:/home
     tty: true
     privileged: true
